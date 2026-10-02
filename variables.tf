@@ -21,3 +21,9 @@ variable "module_source_rt" {
   const = true
   default = "./modules/rt"
 }
+
+variable "module_source_sg" {
+  type = string
+  const = true
+  default = "./modules/sg"
+}

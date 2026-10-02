@@ -25,3 +25,8 @@ module "igw" {
     vpc_id = module.vpc.vpc_id
 }
 
+#create security group public
+module "sg" {
+    source = var.module_source_sg
+    vpc_id = module.vpc.vpc_id
+}
