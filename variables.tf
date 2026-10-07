@@ -27,3 +27,9 @@ variable "module_source_sg" {
   const = true
   default = "./modules/sg"
 }
+
+variable "module_source_key_pear" {
+  type = string
+  const = true
+  default = "./modules/key_pear"
+}
