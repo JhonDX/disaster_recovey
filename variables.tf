@@ -28,8 +28,8 @@ variable "module_source_sg" {
   default = "./modules/sg"
 }
 
-variable "module_source_key_pear" {
+variable "module_source_key_pair" {
   type = string
   const = true
-  default = "./modules/key_pear"
+  default = "./modules/key_pair"
 }

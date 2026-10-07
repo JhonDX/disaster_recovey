@@ -31,6 +31,6 @@ module "sg" {
     vpc_id = module.vpc.vpc_id
 }
 #Create Key Pear EC2
-module "key_pear"{
-    source = var.module_source_key_pear
+module "key_pair"{
+    source = var.module_source_key_pair
 }
