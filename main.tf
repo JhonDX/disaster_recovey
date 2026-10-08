@@ -6,7 +6,6 @@ module "vpc" {
 #Create subnets public and private
 module "subnet" {
     source = var.module_source_subnets
-
     vpc_id = module.vpc.vpc_id
 }
 
@@ -26,7 +25,6 @@ module "rt_associate" {
 #Create internet gateway public and private
 module "igw" {
     source = var.module_source_igw
-
     vpc_id = module.vpc.vpc_id
 }
 
@@ -39,9 +37,7 @@ module "sg" {
 module "key_pair"{
     source = var.module_source_key_pair
 }
-/* #Data Ami
+
 module "ami" {
     source = var.module_source_ami
 }
-
-*/
