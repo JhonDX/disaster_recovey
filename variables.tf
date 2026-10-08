@@ -21,6 +21,11 @@ variable "module_source_rt" {
   const = true
   default = "./modules/rt"
 }
+variable "module_source_rt_associate" {
+  type = string
+  const = true
+  default ="./modules/rt_associate"
+}
 
 variable "module_source_sg" {
   type = string
@@ -32,4 +37,10 @@ variable "module_source_key_pair" {
   type = string
   const = true
   default = "./modules/key_pair"
+}
+
+variable "module_source_ami" {
+  type = string
+  const = true
+  default = "./modules/ami"
 }

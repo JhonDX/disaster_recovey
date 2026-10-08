@@ -10,8 +10,3 @@ resource "aws_route_table" "public" {
     Name = "gacc-public-rt"
   }
 }
-
-resource "aws_route_table_association" "public" {
-  subnet_id      = var.subnet_id
-  route_table_id = aws_route_table.public.id
-}
