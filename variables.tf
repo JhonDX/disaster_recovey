@@ -44,3 +44,9 @@ variable "module_source_ami" {
   const = true
   default = "./modules/ami"
 }
+
+variable "module_source_ec2" {
+  type = string
+  const = true
+  default = "./modules/ec2"
+}

@@ -41,3 +41,13 @@ module "key_pair"{
 module "ami" {
     source = var.module_source_ami
 }
+
+
+module "ec2" {
+    source            = var.module_source_ec2
+    ami_id            = module.ami.ami_id
+    subnet_id         = module.subnet.subnet_id
+    security_group_id = module.sg.security_group_id
+    key_name          = module.key_pair.key_name
+    user_data_path    = "${path.root}/scripts/ec2-init.sh"
+}
